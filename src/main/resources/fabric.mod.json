@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "microbes",
+	"version": "${version}",
+	"name": "Microbes",
+	"description": "A microorganisms mod made by HosamCrafted",
+	"authors": [
+		"HosamCrafted"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/microbes/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.hosam.microbes.Microbes"
+		],
+		"fabric-datagen": [
+			"net.hosam.microbes.MicrobesDataGenerator"
+		],
+		"Client": [
+			"net.hosam.microbes.MicrobesClient"
+		]
+	},
+	"mixins": [
+		"microbes.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
