@@ -11,6 +11,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item SWAB = registerItem("swab", new Item(new Item.Settings()));
+    public static final Item SAMPLE_TRAY = registerItem("sample_tray", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Microbes.MOD_ID, name), item);
@@ -21,6 +22,7 @@ public class ModItems {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(SWAB);
+            entries.add(SAMPLE_TRAY);
         });
     }
 }
