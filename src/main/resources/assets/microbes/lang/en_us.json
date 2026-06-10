@@ -1,4 +1,7 @@
 {
   "item.microbes.swab": "Swab",
-  "item.microbes.sample_tray": "Sample Tray"
+  "item.microbes.sample_tray": "Sample Tray",
+
+  "block.microbes.microscope": "Microscope",
+  "block.microbes.flask_holder": "Flask Holder"
 }

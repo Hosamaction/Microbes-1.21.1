@@ -16,7 +16,11 @@ public class ModBlocks {
 
     public static final Block MICROSCOPE = registerBlock("microscope",
             new Block(AbstractBlock.Settings.create().strength(4f)
-                    .requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+                    .requiresTool().sounds(BlockSoundGroup.METAL)));
+
+    public static final Block FLASK_HOLDER = registerBlock("flask_holder",
+            new Block(AbstractBlock.Settings.create().strength(4f)
+                    .requiresTool().sounds(BlockSoundGroup.WOOD)));
     
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -33,6 +37,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(ModBlocks.MICROSCOPE);
+            entries.add(ModBlocks.FLASK_HOLDER);
         });
     }
 }
